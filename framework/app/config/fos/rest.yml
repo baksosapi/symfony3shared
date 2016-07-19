@@ -1,0 +1,14 @@
+fos_rest:
+    format_listener:
+        rules:
+            - { path: ^/api/, priorities: [html,json,xml], fallback_format: ~, prefer_extension: true}
+    routing_loader:
+        default_format: json
+    param_fetcher_listener: true
+    view:
+        view_response_listener: 'force'
+        formats:
+            xml: true
+            json: true
+        templating_formats:
+            html: true

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ais\Bundle\ApiBundle\Controller;
+namespace Ais\Bundle\ApiBundle\Controller\V1;
 
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
@@ -23,7 +23,7 @@ class MakamController extends FOSRestController
     /**
      * GET Route Annotation
      * @return array
-     * @Route("/makams/get.{_format}")
+     * @Rest\Get("/makams/get.{_format}")
      * @Rest\View
      */
     public function getMakamsAction()

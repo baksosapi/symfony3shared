@@ -17,3 +17,6 @@
 /framework/web/
 /public_html/bundles/
 /framework/src/Ais/
+/framework/tests/AisBundleDoctorBundle/
+/framework/tests/AisPatientBundle/
+framework/var/cache/

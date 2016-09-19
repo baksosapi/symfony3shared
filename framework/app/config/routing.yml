@@ -1,3 +1,15 @@
+ais_bundle_doctor:
+    resource: "@AisBundleDoctorBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ais_patient:
+    resource: "@AisPatientBundle/Resources/config/routing.yml"
+    prefix:   /
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix: /api/doc
+
 api:
     resource: "@ApiBundle/Controller/V1/"
     type:     annotation
@@ -6,3 +18,4 @@ api:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+    prefix:   /app
